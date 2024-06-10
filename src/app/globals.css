@@ -16,6 +16,11 @@
   }
 }
 
+a:focus, a:active {
+  outline: none;
+  box-shadow: none;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

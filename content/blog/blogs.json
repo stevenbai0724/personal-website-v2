@@ -1,0 +1,16 @@
+[
+    {
+      "id": "first-hackathon",
+      "title": "First Hackathon",
+      "date": "July 2021",
+      "content": "first-hackathon.md",
+      "tags": ["Hackathon", "High School"]
+    },
+    {
+      "id": "first-term-waterloo",
+      "title": "First Term at Waterloo",
+      "date": "2024-02-01",
+      "content": "first-term-waterloo.md"
+    }
+  ]
+  

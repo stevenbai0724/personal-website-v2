@@ -1,0 +1,37 @@
+.markdown-content {
+    text-align: left;
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.markdown-content p {
+    font-size: medium;
+    margin-bottom: 1.25rem;
+}
+.markdown-content li {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.markdown-content ul {
+    padding-left: 1rem; /* Ensure there is enough padding for bullets to be visible */
+    margin-bottom: 15px;
+    margin-top: 15px;
+    list-style-type: disc; /* Ensure bullets are shown */
+}
+.markdown-content a {
+    text-decoration: none;
+    color: #1E90FF;
+
+}
+.markdown-content a:hover {
+    text-decoration: underline;
+}
+.markdown-content img {
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}

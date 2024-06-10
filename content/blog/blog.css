@@ -1,0 +1,68 @@
+.blog {
+    
+    text-align: left;
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+
+    .thumbnail-box {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; /* 1280 / 720 * 100% to maintain 9:16 aspect ratio */
+        overflow: hidden;
+        background-color: #f0f0f0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        
+    }
+    .thumbnail {
+        position:absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+}
+
+.blog p {
+    font-size: medium;
+    margin-bottom: 1.25rem;
+}
+.blog li {
+    list-style-type: disc;
+}
+.blog ul {
+    padding-left: 1.25rem; /* Ensure there is enough padding for bullets to be visible */
+    margin-bottom: 15px;
+    margin-top: 15px;
+    list-style-type: disc; /* Ensure bullets are shown */
+}
+.blog a {
+    text-decoration: none;
+    color: #1E90FF;
+
+}
+.blog a:hover {
+    text-decoration: underline;
+}
+.blog h1 {
+    font-size: 1.5rem; /* 24px */
+    padding-top: 1.25rem;
+}
+.blog h2 {
+    font-size: 1.25rem; /* 24px */
+    padding-top: 1.25rem;
+}
+
+@media (min-width: 768px) {
+    .blog {
+        .thumbnail-box {
+            width: 500px;
+            padding-bottom: calc((500px * 9) / 16);
+        }
+    }
+}
