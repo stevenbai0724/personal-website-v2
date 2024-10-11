@@ -8,14 +8,20 @@
 .markdown-content p {
     font-size: medium;
     margin-bottom: 1.25rem;
+    line-height: 1.6;
 }
 .markdown-content li {
     list-style-type: none;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.markdown-content li li {
+    margin-left: 2rem;
+    list-style-type: disc;
+    padding-top: 0;
+}
 .markdown-content ul {
-    padding-left: 1rem; /* Ensure there is enough padding for bullets to be visible */
+    padding-left: 0.5rem;
     margin-bottom: 15px;
     margin-top: 15px;
     list-style-type: disc; /* Ensure bullets are shown */
@@ -23,7 +29,6 @@
 .markdown-content a {
     text-decoration: none;
     color: #1E90FF;
-
 }
 .markdown-content a:hover {
     text-decoration: underline;
@@ -31,6 +36,7 @@
 .markdown-content img {
     height: 35px;
     width: 35px;
+    margin-right: 10px;
     border-radius: 5px;
     display: inline-block;
     vertical-align: middle;

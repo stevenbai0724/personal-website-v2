@@ -9,7 +9,7 @@ export default function NavbarComponent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return (
-    <div className="p-5 border-b-1 sticky top-0 opacity-90 bg-black border-white w-full flex flex-column justify-center">
+    <div className="p-5 border-b-1 sticky top-0 z-50 opacity-90 bg-black border-white w-full flex flex-column justify-center">
       <Navbar 
         isMenuOpen={isMenuOpen}
         className="w-full max-w-3xl"

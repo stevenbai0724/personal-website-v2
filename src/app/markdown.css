@@ -1,0 +1,77 @@
+.markdown-content {
+    text-align: left;
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-size: 1rem;
+}
+.markdown-content h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.markdown-content h2 {
+    font-size: 1.75rem;
+    margin-top: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.markdown-content h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.markdown-content p {
+    font-size: medium;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+}
+.markdown-content li {
+    list-style-type: none;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+.markdown-content li li {
+    margin-left: 1.5rem;
+    list-style-type: disc;
+}
+.markdown-content ul {
+    padding-left: 0.5rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    list-style-type: disc; /* Ensure bullets are shown */
+}
+.markdown-content a {
+    text-decoration: none; /* Remove default underline */
+    color: #1E90FF;
+    font-weight: 500; /* Slightly increase weight for readability */
+    position: relative; /* Needed for pseudo-elements */
+}
+.markdown-content a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust position for underline */
+    width: 100%;
+    height: 1px; /* Height of the underline */
+    background: #1E90FF; /* Color of the underline */
+    transform: scaleX(0); /* Initially hidden */
+    transition: transform 0.3s ease;
+    transform-origin: left; /* Animation starts from the left */
+}
+
+.markdown-content a:hover::after {
+    transform: scaleX(1); /* Show underline on hover */
+}
+.markdown-content img {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}

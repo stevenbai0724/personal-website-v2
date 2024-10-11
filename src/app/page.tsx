@@ -6,7 +6,7 @@ import NavbarComponent from "../components/Navbar";
 import FooterComponent from "@/components/Footer";
 import "./globals.css";
 import { getMarkdownContent } from "@/lib/getMarkdownContent";
-import "../../content/markdown.css"
+import "./markdown.css"
 
 export default async function Home() {
   const markdownContent = getMarkdownContent('home.md');
